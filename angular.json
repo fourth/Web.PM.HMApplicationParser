@@ -18,7 +18,7 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "docs",
-            "baseHref": "/Web.PM.HMApplicationParser",
+            "baseHref": "/Web.PM.HMApplicationParser/",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
