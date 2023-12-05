@@ -1,1 +1,18 @@
-Web.PM.HMApplicationParser
+<mat-toolbar color="primary">
+    <span>HiringManager: Application Parser</span>
+  <button mat-icon-button>
+    <mat-icon>upload_file</mat-icon>
+  </button>
+</mat-toolbar>
+
+<div class="gzip-decompressor">
+  <mat-icon>upload_file</mat-icon>
+  <mat-icon>file_upload</mat-icon>
+  <mat-icon>folder_zip</mat-icon>
+  <mat-icon>insert_drive_file</mat-icon>
+  <mat-icon>description</mat-icon>
+
+  <input type="file" (change)="onFileSelectedClick($event)" />
+
+  <pre *ngIf="decompressedData">{{ decompressedData }}</pre>
+</div>
